@@ -1,6 +1,4 @@
-package ru.geekbrains;
-
-import ru.geekbrains.domain.HttpRequest;
+package ru.geekbrains.utils;
 
 import java.util.Deque;
 import java.util.HashMap;

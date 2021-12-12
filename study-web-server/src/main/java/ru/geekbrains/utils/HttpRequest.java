@@ -1,4 +1,4 @@
-package ru.geekbrains.domain;
+package ru.geekbrains.utils;
 
 import java.util.Map;
 
@@ -34,6 +34,7 @@ public class HttpRequest {
     public String getBody() {
         return body;
     }
+
 
     @Override
     public String toString() {
