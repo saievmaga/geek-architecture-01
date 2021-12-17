@@ -19,4 +19,40 @@ public class HttpResponse {
                 .append(body);
         return sb.toString();
     }
+
+    public static HttpResponseBuilder HttpResponseBuilder() {
+        return new HttpResponseBuilder();
+    }
+
+    public static class HttpResponseBuilder {
+        private HttpResponse httpResponse;
+
+        private HttpResponseBuilder() {
+            this.httpResponse = new HttpResponse();
+        }
+
+        public HttpResponseBuilder httpVersion(String version) {
+            this.httpResponse.httpVersion = version;
+            return this;
+        }
+
+        public HttpResponseBuilder code(String code) {
+            this.httpResponse.code = code;
+            return this;
+        }
+
+        public HttpResponseBuilder answer(String answer) {
+            this.httpResponse.code = answer;
+            return this;
+        }
+
+        public HttpResponseBuilder body(String body) {
+            this.httpResponse.body = body;
+            return this;
+        }
+
+        public HttpResponse build() {
+            return this.httpResponse;
+        }
+    }
 }
