@@ -2,7 +2,8 @@ package ru.geekbrains;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.geekbrains.domain.HttpRequest;
+import ru.geekbrains.utils.HttpRequest;
+import ru.geekbrains.utils.RequestParser;
 
 import java.util.Deque;
 import java.util.LinkedList;
